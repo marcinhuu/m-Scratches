@@ -5,7 +5,7 @@ Language = {
         failedOpening = "Failed to scratch the scratch card.",
         youWon = "You won:",
         currencyType = "$",
-        lotteryShop = "LotteryShop",
+        scratchShop = "LotteryShop",
         cooldownTimer = "You need to wait until scratch again.",
     },
     ["pt"] = {
@@ -13,7 +13,7 @@ Language = {
         failedOpening = "Falha ao raspar a raspadinha.",
         youWon = "Ganhaste:",
         currencyType = "€",
-        lotteryShop = "LojaLotaria",
+        scratchShop = "LojaLotaria",
         cooldownTimer = "Tens de aguardar um pouco para raspar outro.",
     },
     ["de"] = {
@@ -21,7 +21,7 @@ Language = {
         failedOpening = "Die Rubbelkarte konnte nicht gerubbelt werden.",
         youWon = "Du hast gewonnen:",
         currencyType = "€",
-        lotteryShop = "LotterieShop",
+        scratchShop = "LotterieShop",
         cooldownTimer = "Sie müssen warten, bis Sie wieder neu sind.",
     },
     ["es"] = {
@@ -29,7 +29,7 @@ Language = {
         failedOpening = "Error al rascar la tarjeta de rascar.",
         youWon = "Ganaste:",
         currencyType = "€",
-        lotteryShop = "TiendaLotería",
+        scratchShop = "TiendaLotería",
         cooldownTimer = "Tienes que esperar hasta que vuelvas a rascar.",
     },
 }

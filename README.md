@@ -1,4 +1,4 @@
-# m-Lottery script for QB-Core
+# m-Scratches script for QB-Core
 
 - Thank you very much for downloading this product! Hope you have fun!
 - If you are intested in recieving updates join the community on **[Discord](https://discord.gg/marcinhu)**! |
@@ -21,11 +21,11 @@
 
 **qb-core/shared/items.lua**
 ```
-    ['lotterycard01']           = {['name'] = "lotterycard01",          ['label'] = "Lottery Card 01",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard01.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard02']           = {['name'] = "lotterycard02",          ['label'] = "Lottery Card 02",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard02.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard03']           = {['name'] = "lotterycard03",          ['label'] = "Lottery Card 03",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard03.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard04']           = {['name'] = "lotterycard04",          ['label'] = "Lottery Card 04",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard04.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard05']           = {['name'] = "lotterycard05",          ['label'] = "Lottery Card 05",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard05.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['scratchcard01']           = {['name'] = "scratchcard01",          ['label'] = "Scratch Card 01",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "scratchcard01.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['scratchcard02']           = {['name'] = "scratchcard02",          ['label'] = "Scratch Card 02",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "scratchcard02.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['scratchcard03']           = {['name'] = "scratchcard03",          ['label'] = "Scratch Card 03",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "scratchcard03.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['scratchcard04']           = {['name'] = "scratchcard04",          ['label'] = "Scratch Card 04",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "scratchcard04.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['scratchcard05']           = {['name'] = "scratchcard05",          ['label'] = "Scratch Card 05",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "scratchcard05.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
 ```
 
 

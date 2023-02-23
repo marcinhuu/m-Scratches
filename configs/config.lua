@@ -25,40 +25,40 @@ Config.Peds = {
     --  [3] = {enable = true, type = 4, hash = GetHashKey("a_m_m_tourist_01"), x = -66.90,  y = -1312.41,  z = 28.28, h = 179.15},
 }
 
-Config.LotteryShop = {
-    [1] = { name = "lotterycard01", price = 50,   amount = 10, info = {}, type = "item", slot = 1 },
-    [2] = { name = "lotterycard02", price = 150,  amount = 10, info = {}, type = "item", slot = 2 },
-    [3] = { name = "lotterycard03", price = 350,  amount = 10, info = {}, type = "item", slot = 3 },
-    [4] = { name = "lotterycard04", price = 650,  amount = 10, info = {}, type = "item", slot = 4 },
-    [5] = { name = "lotterycard05", price = 1000, amount = 10, info = {}, type = "item", slot = 5 },
+Config.ScratchShop = {
+    [1] = { name = "scratchcard01", price = 50,   amount = 10, info = {}, type = "item", slot = 1 },
+    [2] = { name = "scratchcard02", price = 150,  amount = 10, info = {}, type = "item", slot = 2 },
+    [3] = { name = "scratchcard03", price = 350,  amount = 10, info = {}, type = "item", slot = 3 },
+    [4] = { name = "scratchcard04", price = 650,  amount = 10, info = {}, type = "item", slot = 4 },
+    [5] = { name = "scratchcard05", price = 1000, amount = 10, info = {}, type = "item", slot = 5 },
 }
 
 Config.Rewards = {
-    ["LotteryCard01"] = {
+    ["ScratchCard01"] = {
         chancePremiumReward = 90, -- Chance to get the premium reward
         minReward = 10, -- Minimum reward
         maxReward = 100, -- Maximum reward
         premiumReward = 150, -- Premium reward
     },
-    ["LotteryCard02"] = {
+    ["ScratchCard02"] = {
         chancePremiumReward = 30, -- Chance to get the premium reward
         minReward = 50, -- Minimum reward
         maxReward = 300, -- Maximum reward
         premiumReward = 450, -- Premium reward
     },
-    ["LotteryCard03"] = {
+    ["ScratchCard03"] = {
         chancePremiumReward = 20, -- Chance to get the premium reward
         minReward = 150, -- Minimum reward
         maxReward = 550, -- Maximum reward
         premiumReward = 750, -- Premium reward
     },
-    ["LotteryCard04"] = {
+    ["ScratchCard04"] = {
         chancePremiumReward = 10, -- Chance to get the premium reward
         minReward = 500, -- Minimum reward
         maxReward = 950, -- Maximum reward
         premiumReward = 1250, -- Premium reward
     },
-    ["LotteryCard05"] = {
+    ["ScratchCard05"] = {
         chancePremiumReward = 5, -- Chance to get the premium reward
         minReward = 800, -- Minimum reward
         maxReward = 1250, -- Maximum reward

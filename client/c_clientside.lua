@@ -10,11 +10,11 @@ CreateThread(function() for _, item in pairs(peds) do if item.enable then Reques
 -- Thread to blips
 CreateThread(function() for _, info in pairs(Config.Blips) do if info.enable then info.blip = AddBlipForCoord(info.x, info.y, info.z) SetBlipSprite(info.blip, info.sprite) SetBlipDisplay(info.blip, info.display) SetBlipScale(info.blip, info.scale) SetBlipColour(info.blip, info.colour) SetBlipAsShortRange(info.blip, true) BeginTextCommandSetBlipName("STRING") AddTextComponentSubstringPlayerName(info.name) EndTextCommandSetBlipName(info.blip) end end  end)
 
-function OpenLotteryShop()
-	TriggerServerEvent("inventory:server:OpenInventory", "shop", Language[LanguageType].lotteryShop, {
-        label = Language[LanguageType].lotteryShop,
-        items = Config.LotteryShop,
-        slots = #Config.LotteryShop,
+function OpenScratchesShop()
+	TriggerServerEvent("inventory:server:OpenInventory", "shop", Language[LanguageType].scratchShop, {
+        label = Language[LanguageType].scratchShop,
+        items = Config.ScratchShop,
+        slots = #Config.ScratchShop,
     })
 end
 
@@ -24,8 +24,8 @@ function Cooldown()
     canOpen = true
 end
 
-RegisterNetEvent('m-Lottery:Client:OpenCard')
-AddEventHandler("m-Lottery:Client:OpenCard", function(v)
+RegisterNetEvent('m-Scratches:Client:OpenCard')
+AddEventHandler("m-Scratches:Client:OpenCard", function(v)
     if Config.Settings.Cooldown then if not canOpen then return Notify(Language[LanguageType].cooldownTimer, "error", 5000) end end
     QBCore.Functions.Progressbar('OpenCard', Language[LanguageType].openingPack..v, 5000, false, false, {
         disableMovement = true,
@@ -35,20 +35,20 @@ AddEventHandler("m-Lottery:Client:OpenCard", function(v)
     }, {
         animDict = "mp_arresting",anim = "a_uncuff",flags = 49
     }, {}, {}, function()
-        if v == "lotterycard01" then
-            TriggerServerEvent("m-Lottery:Server:RewardCard", "Card01")
+        if v == "scratchcard01" then
+            TriggerServerEvent("m-Scratches:Server:RewardCard", "Card01")
             if Config.Settings.Cooldown then Cooldown() end
-        elseif v == "lotterycard02" then
-            TriggerServerEvent("m-Lottery:Server:RewardCard", "Card02")
+        elseif v == "scratchcard02" then
+            TriggerServerEvent("m-Scratches:Server:RewardCard", "Card02")
             if Config.Settings.Cooldown then Cooldown() end
-        elseif v == "lotterycard03" then
-            TriggerServerEvent("m-Lottery:Server:RewardCard", "Card03")
+        elseif v == "scratchcard03" then
+            TriggerServerEvent("m-Scratches:Server:RewardCard", "Card03")
             if Config.Settings.Cooldown then Cooldown() end
-        elseif v == "lotterycard04" then
-            TriggerServerEvent("m-Lottery:Server:RewardCard", "Card04")
+        elseif v == "scratchcard04" then
+            TriggerServerEvent("m-Scratches:Server:RewardCard", "Card04")
             if Config.Settings.Cooldown then Cooldown() end
-        elseif v == "lotterycard05" then
-            TriggerServerEvent("m-Lottery:Server:RewardCard", "Card05")
+        elseif v == "scratchcard05" then
+            TriggerServerEvent("m-Scratches:Server:RewardCard", "Card05")
             if Config.Settings.Cooldown then Cooldown() end
         end
     end, function()

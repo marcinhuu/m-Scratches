@@ -1,7 +1,7 @@
 local QBCore = exports[Config.Settings.Core]:GetCoreObject()
 
-RegisterNetEvent('m-Lottery:Client:Notify')
-AddEventHandler("m-Lottery:Client:Notify", function(msg,type,time)
+RegisterNetEvent('m-Scratches:Client:Notify')
+AddEventHandler("m-Scratches:Client:Notify", function(msg,type,time)
     Notify(msg,type,time)
 end)
 
@@ -41,12 +41,12 @@ end
 
 CreateThread(function()
 
-    exports[Config.Settings.Target]:AddBoxZone("OpenLotteryShop", Config.Peds[1], 1.0, 1.0, 
-        { name="OpenLotteryShop", heading = 320, debugPoly = false, minZ = Config.Peds[1].z-2, maxZ = Config.Peds[1].z+2 }, 
+    exports[Config.Settings.Target]:AddBoxZone("OpenScratchesShop", Config.Peds[1], 1.0, 1.0, 
+        { name="OpenScratchesShop", heading = 320, debugPoly = false, minZ = Config.Peds[1].z-2, maxZ = Config.Peds[1].z+2 }, 
             { 
         options = {
             {
-                action = function() OpenLotteryShop() end,
+                action = function() OpenScratchesShop() end,
                 icon = "fas fa-box",
                 label = "Open Lottery Shop",
             },
