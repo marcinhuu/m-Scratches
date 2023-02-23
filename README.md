@@ -1,6 +1,6 @@
 # m-Lottery script for QB-Core
 
-- Thank you very much for purchasing this product! Hope you have fun!
+- Thank you very much for downloading this product! Hope you have fun!
 - If you are intested in recieving updates join the community on **[Discord](https://discord.gg/marcinhu)**! |
 
 
