@@ -32,7 +32,9 @@ AddEventHandler("m-Lottery:Client:OpenCard", function(v)
         disableCarMovement = true,
         disableMouse = false,
         disableCombat = true,
-    }, {}, {}, {}, function()
+    }, {
+        animDict = "mp_arresting",anim = "a_uncuff",flags = 49
+    }, {}, {}, function()
         if v == "lotterycard01" then
             TriggerServerEvent("m-Lottery:Server:RewardCard", "Card01")
             if Config.Settings.Cooldown then Cooldown() end

@@ -5,7 +5,7 @@ Config.Settings = {
     Target = "qb-target", -- Your target/third eye folder name "qb-target"
     Notify = "QBCore", -- Change your notify here "QBCore" | "okok" | "mythic"
     Webhook = "", -- Your webhook to logs when players selling
-    Cooldown = false, -- Enable cooldown?
+    Cooldown = true, -- Enable cooldown?
     Timer = 60, -- 60 Seconds
 }
 
