@@ -21,11 +21,11 @@
 
 **qb-core/shared/items.lua**
 ```
-    ['lotterycard01']           = {['name'] = "lotterycard01",          ['label'] = "Lottery Card 01",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard01.png",          ['unique'] = false,    ['usable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard02']           = {['name'] = "lotterycard02",          ['label'] = "Lottery Card 02",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard02.png",          ['unique'] = false,    ['usable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard03']           = {['name'] = "lotterycard03",          ['label'] = "Lottery Card 03",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard03.png",          ['unique'] = false,    ['usable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard04']           = {['name'] = "lotterycard04",          ['label'] = "Lottery Card 04",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard04.png",          ['unique'] = false,    ['usable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
-    ['lotterycard05']           = {['name'] = "lotterycard05",          ['label'] = "Lottery Card 05",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard05.png",          ['unique'] = false,    ['usable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['lotterycard01']           = {['name'] = "lotterycard01",          ['label'] = "Lottery Card 01",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard01.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['lotterycard02']           = {['name'] = "lotterycard02",          ['label'] = "Lottery Card 02",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard02.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['lotterycard03']           = {['name'] = "lotterycard03",          ['label'] = "Lottery Card 03",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard03.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['lotterycard04']           = {['name'] = "lotterycard04",          ['label'] = "Lottery Card 04",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard04.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
+    ['lotterycard05']           = {['name'] = "lotterycard05",          ['label'] = "Lottery Card 05",              ['weight'] = 100,   ['type'] = "item",    ['image'] = "lotterycard05.png",          ['unique'] = false,    ['useable'] = true,       ['shouldClose'] = true,    ["combinable"] = nil,   ["description"] = ""},
 ```
 
 
