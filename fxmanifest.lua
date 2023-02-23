@@ -1,6 +1,6 @@
 fx_version 'cerulean'
 author '! marcinhu.#6158'
-Description 'm-Lottery'
+Description 'm-Scratches'
 game 'gta5'
 
 
