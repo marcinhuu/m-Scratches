@@ -15,3 +15,13 @@ client_scripts{
 server_scripts{
     'server/**',
 }
+
+escrow_ignore {
+    "images/**",
+    "client/**",
+    "server/**",
+    "configs/**",
+    "README.lua",
+}
+
+lua54 'yes'
