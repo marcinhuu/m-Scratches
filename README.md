@@ -7,7 +7,7 @@
 
 # Preview:
 
-- (https://www.youtube.com/watch?v=N-2Goua2F0M)
+- https://www.youtube.com/watch?v=N-2Goua2F0M
 
 # Features
 - Optimized
