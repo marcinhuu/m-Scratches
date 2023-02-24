@@ -27,7 +27,7 @@ AddEventHandler("m-Scratches:Server:RewardCard", function(card)
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Config.Rewards["ScratchCard01"].premiumReward..Language[LanguageType].currencyType, 'success', 5000)
             end
         else
-            if Player.Functions.RemoveItem("lotterycard01") then
+            if Player.Functions.RemoveItem("scratchcard01") then
                 Player.Functions.AddMoney("cash", Amount)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "**Ticket: ** Card 01".. "\n".. "**Type: ** Normal Prize 💵".. "\n".. "**Amount Earn:** "..Amount.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Amount..Language[LanguageType].currencyType, 'success', 5000)
@@ -36,13 +36,13 @@ AddEventHandler("m-Scratches:Server:RewardCard", function(card)
     elseif card == "Card02" then
         local Amount = math.random(Config.Rewards["ScratchCard02"].minReward, Config.Rewards["ScratchCard02"].maxReward)
         if Prob <= Config.Rewards["ScratchCard02"].chancePremiumReward then
-            if Player.Functions.RemoveItem("lotterycard02") then
+            if Player.Functions.RemoveItem("scratchcard02") then
                 Player.Functions.AddMoney("cash", Config.Rewards["ScratchCard02"].premiumReward)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "📜 **Open a Scratch Ticket 02**".. "\n".. "**Type: ** 💰 Premium Prize".. "\n".. "**Amount Earn:** "..Config.Rewards["ScratchCard01"].premiumReward.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Config.Rewards["ScratchCard02"].premiumReward..Language[LanguageType].currencyType, 'success', 5000)
             end
         else
-            if Player.Functions.RemoveItem("lotterycard02") then
+            if Player.Functions.RemoveItem("scratchcard02") then
                 Player.Functions.AddMoney("cash", Amount)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "**Ticket: ** Card 02".. "\n".. "**Type: ** Normal Prize 💵".. "\n".. "**Amount Earn:** "..Amount.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Amount..Language[LanguageType].currencyType, 'success', 5000)
@@ -51,13 +51,13 @@ AddEventHandler("m-Scratches:Server:RewardCard", function(card)
     elseif card == "Card03" then
         local Amount = math.random(Config.Rewards["ScratchCard03"].minReward, Config.Rewards["ScratchCard03"].maxReward)
         if Prob <= Config.Rewards["ScratchCard03"].chancePremiumReward then
-            if Player.Functions.RemoveItem("lotterycard03") then
+            if Player.Functions.RemoveItem("scratchcard03") then
                 Player.Functions.AddMoney("cash", Config.Rewards["ScratchCard03"].premiumReward)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "📜 **Open a Scratch Ticket 03**".. "\n".. "**Type: ** 💰 Premium Prize".. "\n".. "**Amount Earn:** "..Config.Rewards["ScratchCard01"].premiumReward.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Config.Rewards["ScratchCard03"].premiumReward..Language[LanguageType].currencyType, 'success', 5000)
             end
         else
-            if Player.Functions.RemoveItem("lotterycard03") then
+            if Player.Functions.RemoveItem("scratchcard03") then
                 Player.Functions.AddMoney("cash", Amount)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "**Ticket: ** Card 03".. "\n".. "**Type: ** Normal Prize 💵".. "\n".. "**Amount Earn:** "..Amount.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Amount..Language[LanguageType].currencyType, 'success', 5000)
@@ -66,13 +66,13 @@ AddEventHandler("m-Scratches:Server:RewardCard", function(card)
     elseif card == "Card04" then
         local Amount = math.random(Config.Rewards["ScratchCard04"].minReward, Config.Rewards["ScratchCard04"].maxReward)
         if Prob <= Config.Rewards["ScratchCard04"].chancePremiumReward then
-            if Player.Functions.RemoveItem("lotterycard04") then
+            if Player.Functions.RemoveItem("scratchcard04") then
                 Player.Functions.AddMoney("cash", Config.Rewards["ScratchCard04"].premiumReward)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "📜 **Open a Scratch Ticket 04**".. "\n".. "**Type: ** 💰 Premium Prize".. "\n".. "**Amount Earn:** "..Config.Rewards["ScratchCard01"].premiumReward.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Config.Rewards["ScratchCard04"].premiumReward..Language[LanguageType].currencyType, 'success', 5000)
             end
         else
-            if Player.Functions.RemoveItem("lotterycard04") then
+            if Player.Functions.RemoveItem("scratchcard04") then
                 Player.Functions.AddMoney("cash", Amount)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "**Ticket: ** Card 04".. "\n".. "**Type: ** Normal Prize 💵".. "\n".. "**Amount Earn:** "..Amount.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Amount..Language[LanguageType].currencyType, 'success', 5000)
@@ -81,13 +81,13 @@ AddEventHandler("m-Scratches:Server:RewardCard", function(card)
     elseif card == "Card05" then
         local Amount = math.random(Config.Rewards["ScratchCard05"].minReward, Config.Rewards["ScratchCard05"].maxReward)
         if Prob <= Config.Rewards["ScratchCard05"].chancePremiumReward then
-            if Player.Functions.RemoveItem("lotterycard05") then
+            if Player.Functions.RemoveItem("scratchcard05") then
                 Player.Functions.AddMoney("cash", Config.Rewards["ScratchCard05"].premiumReward)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "📜 **Open a Scratch Ticket 05**".. "\n".. "**Type: ** 💰 Premium Prize".. "\n".. "**Amount Earn:** "..Config.Rewards["ScratchCard01"].premiumReward.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Config.Rewards["ScratchCard05"].premiumReward..Language[LanguageType].currencyType, 'success', 5000)
             end
         else
-            if Player.Functions.RemoveItem("lotterycard05") then
+            if Player.Functions.RemoveItem("scratchcard05") then
                 Player.Functions.AddMoney("cash", Amount)
                 LogScratch( "**❗️ [ m-Scratches ]** ❗️" .. "\n" ..  "\n".. "**🧍‍♂️ [Player Information]** " .. "\n" ..  "**Player Name:** "..Player.PlayerData.name.. "\n" ..  "**CitizenID:** "..Player.PlayerData.citizenid.. "\n" ..  "**Location:** "..playerCoords.. "\n" ..  "\n".. "**📃 [LOG]**".. "\n" ..  "\n".. "**Ticket: ** Card 05".. "\n".. "**Type: ** Normal Prize 💵".. "\n".. "**Amount Earn:** "..Amount.."$" )
                 TriggerClientEvent('m-Scratches:Client:Notify', src, Language[LanguageType].youWon.." "..Amount..Language[LanguageType].currencyType, 'success', 5000)
