@@ -1,6 +1,6 @@
 ![foto1](https://media.discordapp.net/attachments/1019726083827961956/1078398513978814576/scratches.png?width=810&height=456)
 
-# m-Scratches script for QB-Core
+# m-Scratches script for QB-Core & ESX
 
 - Thank you very much for downloading this product! Hope you have fun!
 - If you are intested in recieving updates join the community on **[Discord](https://discord.gg/marcinhu)**! |
