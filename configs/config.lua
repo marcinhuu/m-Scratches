@@ -1,6 +1,7 @@
 Config = {}
 
 Config.Settings = {
+    Framework = "qb", -- "qb" or "esx"
     Core = "qb-core", -- Your core folder name "qb-core"
     Target = "qb-target", -- Your target/third eye folder name "qb-target"
     Notify = "QBCore", -- Change your notify here "QBCore" | "okok" | "mythic"

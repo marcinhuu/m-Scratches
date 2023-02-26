@@ -1,4 +1,8 @@
-local QBCore = exports[Config.Settings.Core]:GetCoreObject()
+if Config.Settings.Framework == "qb" then
+    local QBCore = exports[Config.Settings.Core]:GetCoreObject()
+elseif Config.Settings.Framework == "esx" then
+    ESX = exports['es_extended']:getSharedObject()
+end
 local peds = Config.Peds
 local canOpen = true
 
@@ -27,14 +31,48 @@ end
 RegisterNetEvent('m-Scratches:Client:OpenCard')
 AddEventHandler("m-Scratches:Client:OpenCard", function(v)
     if Config.Settings.Cooldown then if not canOpen then return Notify(Language[LanguageType].cooldownTimer, "error", 5000) end end
-    QBCore.Functions.Progressbar('OpenCard', Language[LanguageType].openingPack..v, 5000, false, false, {
-        disableMovement = true,
-        disableCarMovement = true,
-        disableMouse = false,
-        disableCombat = true,
-    }, {
-        animDict = "mp_arresting",anim = "a_uncuff",flags = 49
-    }, {}, {}, function()
+    if Config.Settings.Framework == "qb" then
+        QBCore.Functions.Progressbar('OpenCard', Language[LanguageType].openingPack..v, 5000, false, false, {
+            disableMovement = true,
+            disableCarMovement = true,
+            disableMouse = false,
+            disableCombat = true,
+        }, {
+            animDict = "mp_arresting",anim = "a_uncuff",flags = 49
+        }, {}, {}, function()
+            if v == "scratchcard01" then
+                TriggerServerEvent("m-Scratches:Server:RewardCard", "Card01")
+                if Config.Settings.Cooldown then Cooldown() end
+            elseif v == "scratchcard02" then
+                TriggerServerEvent("m-Scratches:Server:RewardCard", "Card02")
+                if Config.Settings.Cooldown then Cooldown() end
+            elseif v == "scratchcard03" then
+                TriggerServerEvent("m-Scratches:Server:RewardCard", "Card03")
+                if Config.Settings.Cooldown then Cooldown() end
+            elseif v == "scratchcard04" then
+                TriggerServerEvent("m-Scratches:Server:RewardCard", "Card04")
+                if Config.Settings.Cooldown then Cooldown() end
+            elseif v == "scratchcard05" then
+                TriggerServerEvent("m-Scratches:Server:RewardCard", "Card05")
+                if Config.Settings.Cooldown then Cooldown() end
+            end
+        end, function()
+            Notify(Language[LanguageType].failedOpening, 'error', 5000)
+        end)
+    elseif Config.Settings.Framework == "esx" then
+        lib.progressBar({
+            duration = 5000,
+            label = Language[LanguageType].openingPack..v,
+            useWhileDead = false,
+            canCancel = true,
+            disable = {
+                car = true,
+            },
+            anim = {
+                dict = "mp_arresting",
+                clip = "a_uncuff"
+            },
+        })
         if v == "scratchcard01" then
             TriggerServerEvent("m-Scratches:Server:RewardCard", "Card01")
             if Config.Settings.Cooldown then Cooldown() end
@@ -51,7 +89,5 @@ AddEventHandler("m-Scratches:Client:OpenCard", function(v)
             TriggerServerEvent("m-Scratches:Server:RewardCard", "Card05")
             if Config.Settings.Cooldown then Cooldown() end
         end
-    end, function()
-        Notify(Language[LanguageType].failedOpening, 'error', 5000)
-    end)
+    end
 end)

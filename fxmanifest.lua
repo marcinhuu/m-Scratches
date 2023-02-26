@@ -4,8 +4,10 @@ Description 'm-Scratches'
 game 'gta5'
 
 
-shared_scripts {
-    'configs/**',
+shared_script {
+  --'@ox_lib/init.lua', -- Uncomment if you use ESX
+  --'@es_extended/imports.lua', -- Uncomment if you use ESX
+  'configs/**.lua',
 }
 
 client_scripts{

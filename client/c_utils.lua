@@ -1,4 +1,8 @@
-local QBCore = exports[Config.Settings.Core]:GetCoreObject()
+if Config.Settings.Framework == "qb" then
+    local QBCore = exports[Config.Settings.Core]:GetCoreObject()
+elseif Config.Settings.Framework == "esx" then
+    ESX = exports['es_extended']:getSharedObject()
+end
 
 RegisterNetEvent('m-Scratches:Client:Notify')
 AddEventHandler("m-Scratches:Client:Notify", function(msg,type,time)

@@ -45,6 +45,15 @@
 - Open the config.lua and insert that URL on line 9
 
 # Dependecies:
-
 - qb-core
 - qb-target
+
+# ESX:
+
+## Uncomment lines on fxmanifest.
+
+    ['scratchcard01'] = { label = 'Scratch Card 01', weight = 50, stack = true, allowArmed = false },
+    ['scratchcard02'] = { label = 'Scratch Card 02', weight = 50, stack = true, allowArmed = false },
+    ['scratchcard03'] = { label = 'Scratch Card 03', weight = 50, stack = true, allowArmed = false },
+    ['scratchcard04'] = { label = 'Scratch Card 04', weight = 50, stack = true, allowArmed = false },
+    ['scratchcard04'] = { label = 'Scratch Card 05', weight = 50, stack = true, allowArmed = false },
