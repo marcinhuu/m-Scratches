@@ -50,6 +50,8 @@
 
 # ESX:
 
+- ! If you using ESX the shop dont work, you can put the items in other shop you use. :) 
+
 ## Uncomment lines on fxmanifest.
 
     ['scratchcard01'] = { label = 'Scratch Card 01', weight = 50, stack = true, allowArmed = false },
