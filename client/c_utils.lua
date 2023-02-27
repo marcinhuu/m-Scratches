@@ -1,5 +1,5 @@
 if Config.Settings.Framework == "qb" then
-    local QBCore = exports[Config.Settings.Core]:GetCoreObject()
+    QBCore = exports[Config.Settings.Core]:GetCoreObject()
 elseif Config.Settings.Framework == "esx" then
     ESX = exports['es_extended']:getSharedObject()
 end
