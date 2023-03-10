@@ -4,8 +4,8 @@ elseif Config.Settings.Framework == "esx" then
     ESX = exports['es_extended']:getSharedObject()
 end
 
------------- OLD CORE ---------------- OLD CORE --------------
---[[ local cards = {"scratchcard01", "scratchcard02", "scratchcard03", "scratchcard04", "scratchcard05"}
+
+local cards = {"scratchcard01", "scratchcard02", "scratchcard03", "scratchcard04", "scratchcard05"}
 for k, v in pairs(cards) do
     if Config.Settings.Framework == "qb" then
         QBCore.Functions.CreateUseableItem(v, function(source, item) 
@@ -13,28 +13,6 @@ for k, v in pairs(cards) do
             local Player = QBCore.Functions.GetPlayer(src)
             if not Player.Functions.GetItemByName(item.name) then return end
             if Player.Functions.GetItemBySlot(item.slot) ~= nil then
-                TriggerClientEvent("m-Scratches:Client:OpenCard", source, v) 
-            end
-        end)
-    elseif Config.Settings.Framework == "esx" then
-        ESX.RegisterUsableItem(v, function(source, item) 
-            local src = source
-            local Player = ESX.GetPlayerFromId(src)
-            if Player.getInventoryItem(v) and Player.getInventoryItem(v).count >= 1 then
-                TriggerClientEvent("m-Scratches:Client:OpenCard", source, v) 
-            end
-        end)
-    end
-end  ]]
------------ NEW CORE ---------------------- NEW CORE--------------
-local cards = {"scratchcard01", "scratchcard02", "scratchcard03", "scratchcard04", "scratchcard05"}
-for k, v in pairs(cards) do
-    if Config.Settings.Framework == "qb" then
-        QBCore.Functions.CreateUseableItem(v, function(source, item) 
-            local src = source
-            local Player = QBCore.Functions.GetPlayer(src)
-            local items =  Player.Functions.GetItemsByName(item.name) 
-            if item.name ~= nil and #item.name > 0 then
                 TriggerClientEvent("m-Scratches:Client:OpenCard", source, v) 
             end
         end)
