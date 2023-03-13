@@ -34,15 +34,15 @@
 
 # Setup Images:
 
-- Copy all images inside of : m-Farming/images
+- Copy all images inside of : m-Scratches/images
 - Open your inventory and inside of folder html/images drop it
 
 # Setup webhooks:
 
-- You need to create a channel on your discord called for example "farming-logs"
+- You need to create a channel on your discord called for example "scratchcard-logs"
 - Then you will edit the channel -> Integrations -> Webhooks -> New Webhook
 - After creating, you will have an option that says: Copy webhook URL
-- Open the config.lua and insert that URL on line 9
+- Open the config.lua and insert that URL on line 8
 
 # Dependecies:
 - qb-core
