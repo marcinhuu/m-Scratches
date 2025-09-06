@@ -1,7 +1,7 @@
 # m-Scratches Script for QB-Core & ESX
 
 Thank you for downloading this product! Hope you have fun!  
-To receive updates, join the community on **[Discord](https://discord.gg/marcinhu)**.
+To receive updates, join the community on **[Discord](https://discord.gg/https://discord.gg/8cp3UDEeR2)**.
 
 # Preview
 [Watch Preview](https://www.youtube.com/watch?v=N-2Goua2F0M)
