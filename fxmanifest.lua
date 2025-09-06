@@ -1,12 +1,10 @@
 fx_version 'cerulean'
-author '! marcinhu.#6158'
-Description 'm-Scratches'
+author 'marcinhu - marcinhu.tebex.io'
+Description 'm-Scratches - Scratch Cards System for QBCore and Ox Inventory'
 game 'gta5'
 
-
 shared_script {
-  --'@ox_lib/init.lua', -- Uncomment if you use ESX
-  --'@es_extended/imports.lua', -- Uncomment if you use ESX
+  '@ox_lib/init.lua',
   'configs/**.lua',
 }
 
@@ -18,12 +16,5 @@ server_scripts{
     'server/**',
 }
 
-escrow_ignore {
-    "images/**",
-    "client/**",
-    "server/**",
-    "configs/**",
-    "README.lua",
-}
 
 lua54 'yes'

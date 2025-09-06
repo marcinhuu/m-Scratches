@@ -1,68 +1,67 @@
 Config = {}
 
-Config.Settings = {
-    Framework = "qb", -- "qb" or "esx"
-    Core = "qb-core", -- Your core folder name "qb-core"
-    Target = "qb-target", -- Your target/third eye folder name "qb-target"
-    Notify = "QBCore", -- Change your notify here "QBCore" | "okok" | "mythic"
-    Webhook = "", -- Your webhook to logs when players selling
-    Cooldown = true, -- Enable cooldown?
-    Timer = 60, -- 60 Seconds
+Config.Notification = "lation_ui" -- "ox_lib" or "lation_ui"
+Config.Display = "lation_ui" -- "ox_lib" or "lation_ui"
+Config.Cooldown = 60 -- Cooldown in seconds between using scratch cards
+
+Config.ScratchSettings = {
+    location       = vec3(418.51, -767.68, 29.43),       -- Local da loja de raspadinhas
+    location_ped   = vec4(418.51, -767.68, 29.43, 88.6), -- Posição do ped com heading
+    ped_model      = "u_m_m_partytarget",
+    locationBlip = {
+        enable = true,
+        sprite = 52,
+        color  = 2,
+        scale  = 0.6,
+        text   = "Scratch Shop",
+    },
 }
 
-Config.Blips = {
-    [1] = {enable = true, x = -66.90, y = -1312.41, z = 28.28, sprite = 605, display = 4, scale = 0.8, colour = 5,  name = "Lottery Tickets"},
-    -- You can add more blips
-    -- Example:
-    -- [2] = {enable = true, x = -66.90, y = -1312.41, z = 28.28, sprite = 605, display = 4, scale = 0.8, colour = 5,  name = "Lottery Tickets"},
-    -- [3] = {enable = true, x = -66.90, y = -1312.41, z = 28.28, sprite = 605, display = 4, scale = 0.8, colour = 5,  name = "Lottery Tickets"},
-}
-
-Config.Peds = {
-    [1] = {enable = true, type = 4, hash = GetHashKey("a_m_m_tourist_01"), x = -66.90,  y = -1312.41,  z = 28.28, h = 179.15},
-    -- You can add more peds
-    -- Example :
-    --  [2] = {enable = true, type = 4, hash = GetHashKey("a_m_m_tourist_01"), x = -66.90,  y = -1312.41,  z = 28.28, h = 179.15},
-    --  [3] = {enable = true, type = 4, hash = GetHashKey("a_m_m_tourist_01"), x = -66.90,  y = -1312.41,  z = 28.28, h = 179.15},
-}
+Config.MaxScratchCards = 5 -- Maximum scratch cards a player can buy at once
 
 Config.ScratchShop = {
-    [1] = { name = "scratchcard01", price = 50,   amount = 10, info = {}, type = "item", slot = 1 },
-    [2] = { name = "scratchcard02", price = 150,  amount = 10, info = {}, type = "item", slot = 2 },
-    [3] = { name = "scratchcard03", price = 350,  amount = 10, info = {}, type = "item", slot = 3 },
-    [4] = { name = "scratchcard04", price = 650,  amount = 10, info = {}, type = "item", slot = 4 },
-    [5] = { name = "scratchcard05", price = 1000, amount = 10, info = {}, type = "item", slot = 5 },
+    { item_name = "scratchcard01", item_price = 50  },
+    { item_name = "scratchcard02", item_price = 150 },
+    { item_name = "scratchcard03", item_price = 300 },
+    { item_name = "scratchcard04", item_price = 500 },
+    { item_name = "scratchcard05", item_price = 750 },
 }
 
 Config.Rewards = {
-    ["ScratchCard01"] = {
-        chancePremiumReward = 90, -- Chance to get the premium reward
-        minReward = 10, -- Minimum reward
-        maxReward = 100, -- Maximum reward
-        premiumReward = 150, -- Premium reward
+    {
+        id                 = "scratchcard01", -- Item name
+        name               = "Card 01", -- Label for the card
+        chancePremium      = 90, -- Chance to win premium reward in percentage
+        rewardRange        = { min = 10, max = 100 }, -- Normal reward
+        premiumReward      = 150, -- Premium reward
     },
-    ["ScratchCard02"] = {
-        chancePremiumReward = 30, -- Chance to get the premium reward
-        minReward = 50, -- Minimum reward
-        maxReward = 300, -- Maximum reward
-        premiumReward = 450, -- Premium reward
+    {
+        id                 = "scratchcard02",
+        name               = "Card 02",
+        chancePremium      = 30,
+        rewardRange        = { min = 50, max = 300 },
+        premiumReward      = 450,
     },
-    ["ScratchCard03"] = {
-        chancePremiumReward = 20, -- Chance to get the premium reward
-        minReward = 150, -- Minimum reward
-        maxReward = 550, -- Maximum reward
-        premiumReward = 750, -- Premium reward
+    {
+        id                 = "scratchcard03",
+        name               = "Card 03",
+        chancePremium      = 20,
+        rewardRange        = { min = 150, max = 550 },
+        premiumReward      = 750,
     },
-    ["ScratchCard04"] = {
-        chancePremiumReward = 10, -- Chance to get the premium reward
-        minReward = 500, -- Minimum reward
-        maxReward = 950, -- Maximum reward
-        premiumReward = 1250, -- Premium reward
+    {
+        id                 = "scratchcard04",
+        name               = "Card 04",
+        chancePremium      = 10,
+        rewardRange        = { min = 500, max = 950 },
+        premiumReward      = 1250,
     },
-    ["ScratchCard05"] = {
-        chancePremiumReward = 5, -- Chance to get the premium reward
-        minReward = 800, -- Minimum reward
-        maxReward = 1250, -- Maximum reward
-        premiumReward = 1650, -- Premium reward
+    {
+        id                 = "scratchcard05",
+        name               = "Card 05",
+        chancePremium      = 5,
+        rewardRange        = { min = 800, max = 1250 },
+        premiumReward      = 1650,
     },
 }
+
