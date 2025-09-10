@@ -7,6 +7,7 @@ To receive updates, join the community on **[Discord](https://discord.gg/https:/
 [Watch Preview](https://www.youtube.com/watch?v=N-2Goua2F0M)
 
 # Features
+
 - Optimized and fast (0.00ms)
 - 3 types of rewards
 - 5 types of scratch cards
